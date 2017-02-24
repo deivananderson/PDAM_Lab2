@@ -1,0 +1,22 @@
+<ion-view view-title="UsersEdit">
+  <ion-content>
+  <div ng-controller="UsersEditCtrl">
+      <form>
+        <div class="list" >
+            <label class="item item-input">
+              <span class="input-label">Email</span>
+              <input type="email" ng-model="user.email">
+            </label>
+            <label class="item item-input">
+              <span class="input-label">Name</span>
+              <input type="text" ng-model="user.name">
+            </label>
+            <button class="button button-full button-balanced activated" type="submit" ng-click="crearUser(user)">
+              Save
+            </button>
+          </div>
+        </form>
+      </div>
+    </ion-content>
+</ion-view>
+
